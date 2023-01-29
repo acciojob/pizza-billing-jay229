@@ -13,7 +13,7 @@ public class Pizza {
     boolean isBillGenerated;
 
     public Pizza(Boolean isVeg){
-        this.bill="";
+        this.bill=" ";
         this.isVeg = isVeg;
         this.isBillGenerated=false;
         this.isExtraCheeseAdded=false;
@@ -64,15 +64,15 @@ public class Pizza {
         // your code goes here
         if (!isBillGenerated){
             if (isExtraCheeseAdded){
-                this.bill+="Extra Cheese Added:"+this.cheese+"\n";
+                this.bill+="Extra Cheese Added: "+this.cheese+"\n";
             }
             if (isExtraToppingsAdded){
-                this.bill+="Extra Toppings Added:"+this.toppings+"\n";
+                this.bill+="Extra Toppings Added: "+this.toppings+"\n";
             }
             if (isTakeAwayAdded){
-                this.bill+="Paperbag Added:"+20+"\n";
+                this.bill+="Paperbag Added: "+"20"+"\n";
             }
-            this.bill+="Total Price:"+this.price;
+            this.bill+="Total Price: "+this.price+"\n";
         }
         isBillGenerated=true;
         return this.bill;
